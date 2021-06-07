@@ -12,10 +12,11 @@ image:
 
   resources:
     requests:
-      cpu: 100m
-      memory: 100Mi
+      cpu: 500Mi
+      memory: 512Mi
     limits:
-      memory: 100Mi
+      memory: 1.5Gi
+      cpu: 2000Mi
 
 master:
   adminUser: "admin"
