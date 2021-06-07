@@ -16,7 +16,7 @@ RUN /usr/local/bin/install-plugins.sh $(cat /usr/share/jenkins/plugins.txt) && \
 RUN apt-get update && \
     apt-get install nginx -y
     
-COPY jobs/otbuilder /var/jenkins_home/jobs/
+COPY otbuilder /var/jenkins_home/jobs/
 
 COPY default /etc/nginx/sites-available/
 
